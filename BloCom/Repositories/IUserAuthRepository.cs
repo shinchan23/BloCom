@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace BloCom.Repositories
 {
-    interface IUserAuthRepository
+    public interface IUserAuthRepository
     {
         Task<ServiceResponse<int>> SignUp(User user, string password);
         Task<ServiceResponse<string>> Login(string username, string password);
